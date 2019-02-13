@@ -1,0 +1,19 @@
+{
+  "name": "now-server-secrets-express",
+  "version": "1.0.0",
+  "description": "now v2 using express and now secrets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": {
+    "name" : "Jorge Bastias",
+    "email" : "jorgebastias@hotmail.com",
+    "url" : "http://github.com/jbastias"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

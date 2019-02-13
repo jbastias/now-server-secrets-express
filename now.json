@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "env": {
+    "ENV_ONE": "@test-one",
+    "ENV_TWO": "@test-two",
+    "ENV_THREE": "@test-three"
+  },
+  "build": {
+    "env": {
+      "ENV_ONE":"@test-one",
+      "ENV_TWO":"@test-two",
+      "ENV_THREE":"@test-three"
+    }
+  },
+  "builds":[{
+    "src": "index.js",
+    "use": "@now/node-server",
+    "config": { "maxLambdaSize": "15mb" }
+  }],
+  "routes": [{
+    "src": "/(.*)",
+    "dest": "index.js"
+  }]
+}
